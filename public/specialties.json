@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Karađorđeva šnicla",
+        "description": "Pohovana i punjena teleća šnicla sa kajmakom, savršeno hrskava i sočna.",
+        "image": "/images/karadjordjeva.webp"
+    },
+    {
+        "id": 2,
+        "title": "Ćevapi",
+        "description": "Tradicionalni roštilj specijalitet od mlevenog mesa, poslužen sa lukom i lepinjom.",
+        "image": "/images/cevapi.webp"
+    },
+    {
+        "id": 3,
+        "title": "Pljeskavica",
+        "description": "Sočna pljeskavica sa roštilja, često servirana sa kajmakom i prilozima.",
+        "image": "/images/pljeskavica.webp"
+    },
+    {
+        "id": 4,
+        "title": "Sarma",
+        "description": "Kupus punjen mlevenim mesom i pirinčem, kuvana na laganoj vatri.",
+        "image": "/images/sarma.webp"
+    },
+    {
+        "id": 5,
+        "title": "Prebranac",
+        "description": "Zapečeni pasulj sa lukom, tradicionalno jelo bogatog ukusa.",
+        "image": "/images/prebranac.webp"
+    }
+]

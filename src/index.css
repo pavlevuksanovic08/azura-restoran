@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Cinzel Semibold";
+    src: url("./assets/fonts/Cinzel-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Bold';
+    src: url("./assets/fonts/Cinzel-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('./assets/fonts/Cinzel-Regular.ttf')
+}
+
+:root {
+
+    --margin: 5% 2rem;
+
+    --font-regular: "Cinzel";
+    --font-semibold: "Cinzel Semibold", serif;
+    --font-bold: "Cinzel Bold";
+    --font-semi-bold: var(--font-semibold);
+
+    --color-primary: #2B1E1A;
+    --color-secondary: #C89B3C;
+    --color-surface: #FAF4EC;
+    --color-accent: #5A3E2B;
+}
+
+html, body, #root {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-semibold);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+@media (width < 676px) {
+    :root {
+        --margin: 5rem 1rem;
+    }
+}

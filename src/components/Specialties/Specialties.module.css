@@ -1,0 +1,88 @@
+.specialties {
+    margin: var(--margin);
+    overflow: hidden;
+}
+
+.specialties h2 {
+    color: var(--color-primary);
+    margin: 0 0 2.25rem;
+    text-align: center;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    letter-spacing: 0.08em;
+    
+}
+
+.dishes {
+    gap: 3rem;
+    position: relative;
+}
+
+.arrowDiv {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    border-radius: 64px;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%) scale(1.0);
+    transition: transform 0.2s ease-out;
+}
+
+.arrowDiv:hover {
+    transform: translateY(-50%) scale(1.06);
+}
+
+.leftArrow {
+    composes: arrowDiv;
+    top: 50%;
+    left: 2%;
+}
+
+.rightArrow {
+    composes: arrowDiv;
+    top: 50%;
+    right: 2%;
+}
+
+.menuLink {
+    color: var(--color-secondary);
+    display: block;
+    margin: 2rem auto;
+    width: fit-content;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1);
+    transition: tranform 0.2s ease-out
+}
+
+.menuLink:hover {
+    color: var(--color-primary);
+    transform: scale(1.01)
+}
+
+.dishes :global(.slick-slider) {
+    width: 100%;
+    display: block;
+}
+
+.dishes :global(.slick-list) {
+    overflow: visible;
+}
+
+.dishes :global(.slick-track) {
+    display: flex;
+    align-items: stretch;
+}
+
+.dishes :global(.slick-slide) {
+    height: auto;
+}
+
+.dishes :global(.slick-slide) > div {
+    height: 100%;
+    padding: 0 1rem;
+}

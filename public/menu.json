@@ -1,0 +1,948 @@
+{
+    "restoran": "Dren",
+    "napomena": "Pola porcije se naplaćuje 60% od cene",
+    "jelovnik": {
+        "dorucak": {
+            "naziv_sekcije": "Doručak",
+            "icon": "/images/breakfast.webp",
+            "images": [
+                {
+                    "src": "/images/breakfast.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Prženice",
+                    "cena": "360,00 din",
+                    "opis": "sir, paradajz, hleb, jaja",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Omlet",
+                    "cena": "430,00 din",
+                    "opis": "sir, šunka, pečurke, slanina, kobasica ili paprika",
+                    "kolicina": "3 jaja"
+                },
+                {
+                    "naziv": "Jaja na oko",
+                    "cena": "360,00 din",
+                    "opis": "3 kom jaja",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Jaja na oko sa šunkom ili slaninom",
+                    "cena": "430,00 din",
+                    "opis": "3kom jaja, šunka ili slanina",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Kačamak sa sirom",
+                    "cena": "480,00 din",
+                    "opis": "",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "DREN doručak",
+                    "cena": "530,00 din",
+                    "opis": "3 jaja, praziluk, pečurke, paradajz, paprika, pečenica, pavlaka",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Doručak kuće",
+                    "cena": "530,00 din",
+                    "opis": "2 Jaja, proja, pečenica, sir, paradajz",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Užička komplet lepinja",
+                    "cena": "450,00 din",
+                    "opis": "lepinja, pretop, kajmak, jaja",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Komplet lepinja sa kajmakom",
+                    "cena": "430,00 din",
+                    "opis": "Kajmak",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Slatki doručak",
+                    "cena": "370,00 din",
+                    "opis": "lepinje, puter, marmelada, med, mleko",
+                    "kolicina": ""
+                }
+            ]
+        },
+        "topla_predjela": {
+            "naziv_sekcije": "Topla predjela",
+            "icon": "/images/hotAppetizers.webp",
+            "images": [
+                {
+                    "src": "/images/hotAppetizers.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Pečurke na žaru",
+                    "cena": "470,00 din",
+                    "opis": "šampinjoni, pirinač, z.salata",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Grilovano povrće",
+                    "cena": "470,00 din",
+                    "opis": "",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Pohovan kačkavalj",
+                    "cena": "630,00 din",
+                    "opis": "jaja, brašno, kačkavalj",
+                    "kolicina": "200 gr"
+                },
+                {
+                    "naziv": "Pohovan kačkavalj na kockice",
+                    "cena": "690,00 din",
+                    "opis": "",
+                    "kolicina": "200 gr"
+                },
+                {
+                    "naziv": "Pohovana paprika sa sirom",
+                    "cena": "660,00 din",
+                    "opis": "jaja, brašno, sir",
+                    "kolicina": "200 gr"
+                }
+            ]
+        },
+        "hladna_predjela": {
+            "naziv_sekcije": "Hladna predjela",
+            "icon": "/images/coldAppetizers.webp",
+            "images": [
+                {
+                    "src": "/images/coldAppetizers.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Njeguška pršut",
+                    "cena": "830,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Goveđi pršut",
+                    "cena": "890,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Sv. pečenica",
+                    "cena": "680,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Kulen",
+                    "cena": "520,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Slanina",
+                    "cena": "540,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Sjenički Sir",
+                    "cena": "450,00 din",
+                    "opis": "",
+                    "kolicina": "150 gr"
+                },
+                {
+                    "naziv": "Kajmak",
+                    "cena": "580,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Feta Sir",
+                    "cena": "380,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Kačkavalj",
+                    "cena": "550,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Gorgonzola",
+                    "cena": "670,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Beli tanjir - za 2 osobe",
+                    "cena": "1.250,00 din",
+                    "opis": "sjenički sir, feta, kajmak, kačkavalj",
+                    "kolicina": "400 gr"
+                },
+                {
+                    "naziv": "Balkanski tanjir - za 2 osobe",
+                    "cena": "1.500,00 din",
+                    "opis": "njeguška pršut, kulen, pečenica, goveđi pršut, kulen, ajvar, sjenički sir",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Predjelo 'DREN' - za 2 osobe",
+                    "cena": "1.450,00 din",
+                    "opis": "njeguška pršut, goveđa pršut, gorgonzola, bri sir, tortilja, suve šljive sa orasima rolovane u slanini",
+                    "kolicina": "400 gr"
+                },
+                {
+                    "naziv": "Prebranac",
+                    "cena": "450,00 din",
+                    "opis": "",
+                    "kolicina": "200 gr"
+                }
+            ]
+        },
+        "supe_corbe_potazi": {
+            "naziv_sekcije": "Supe, čorbe, potaži",
+            "icon": "/images/soup.webp",
+            "images": [
+                {
+                    "src": "/images/soup.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Goveđa supa sa rezancima",
+                    "cena": "280,00 din",
+                    "opis": "celer, jaja",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Teleća čorba",
+                    "cena": "380,00 din",
+                    "opis": "brašno, celer, N.pavlaka",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Potaž - pečurke",
+                    "cena": "370,00 din",
+                    "opis": "",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Potaž povrće",
+                    "cena": "370,00 din",
+                    "opis": "celer, pavlaka",
+                    "kolicina": ""
+                }
+            ]
+        },
+        "peciva": {
+            "naziv_sekcije": "Peciva",
+            "icon": "/images/bread.webp",
+            "images": [
+                {
+                    "src": "/images/bread.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Domaći hleb - komad (crni i beli)",
+                    "cena": "70,00 din",
+                    "opis": "pšenično brašno",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Lepinja - komad (crni i beli)",
+                    "cena": "70,00 din",
+                    "opis": "pšenično brašno",
+                    "kolicina": ""
+                }
+            ]
+        },
+        "jela_po_porudzbini": {
+            "naziv_sekcije": "Jela po porudžbini",
+            "icon": "/images/special.webp",
+            "images": [
+                {
+                    "src": "/images/special.webp"
+                },
+                {
+                    "src": "/images/special1.webp"
+                },
+                {
+                    "src": "/images/special2.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Stek DREN",
+                    "cena": "1.350,00 din",
+                    "opis": "kačkavalj, gustin, u sosu od c. vina sa su. šljivama",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Ramstek na žaru",
+                    "cena": "1.760,00 din",
+                    "opis": "senf",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Ramstek u sosu",
+                    "cena": "1.880,00 din",
+                    "opis": "gorgonzola, pečurke ili vrganji, N.pavlaka, senf",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Piletina Dren",
+                    "cena": "1.090,00 din",
+                    "opis": "kačkavalj, šampinjoni, k.pavlaka",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Ćuretina Parma",
+                    "cena": "1.360,00 din",
+                    "opis": "ćureći file, pršuta, parmezan, kačkavalj, rukola",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Ćuretina u sosu od gorgonzole",
+                    "cena": "1.390,00 din",
+                    "opis": "N.pavlaka",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Ćuretina u pečurkama",
+                    "cena": "1.290,00 din",
+                    "opis": "šampinjoni, N.pavlaka, senf",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Ćuretina u vrganjima",
+                    "cena": "1.390,00 din",
+                    "opis": "vrganji, N.pavlaka, senf",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Ćuretina sa karijem i medom",
+                    "cena": "1.290,00 din",
+                    "opis": "ćureći file, med, kari, gustin, N.pavlaka, vočester sos, soja sos",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Piletina Parma",
+                    "cena": "1.250,00 din",
+                    "opis": "pileći file, pršuta, parmezan, kačkavalj, rukola",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Piletina u sosu od gorgonzole",
+                    "cena": "1.190,00 din",
+                    "opis": "N.pavlaka",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Piletina u pečurkama",
+                    "cena": "1.110,00 din",
+                    "opis": "pileći file, šampinjoni, N.pavlaka, senf",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Piletina sa vrganjima",
+                    "cena": "1.250,00 din",
+                    "opis": "pileći file, vrganji, N.pavlaka, senf",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Piletina na španske prste",
+                    "cena": "1.110,00 din",
+                    "opis": "",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Piletina u susamu",
+                    "cena": "1.090,00 din",
+                    "opis": "",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Dimljeni batak u sosu od sira",
+                    "cena": "1.090,00 din",
+                    "opis": "soja sos, N.pavlaka, kačkavalj, parmezan",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Svinjski kare u pečurkama",
+                    "cena": "1.250,00 din",
+                    "opis": "sv. kare, šampinjoni, N.pavlaka",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Karađorđeva šnicla (svinjska)",
+                    "cena": "1.320,00 din",
+                    "opis": "kajmak, brašno, jaja, prezle",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Karađorđeva pileća",
+                    "cena": "1.320,00 din",
+                    "opis": "kajmak, brašno, jaja, prezle",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Bečka šnicla",
+                    "cena": "1.150,00 din",
+                    "opis": "laks kare, jaja, prezle, brašno",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Bečka pileća",
+                    "cena": "1.150,00 din",
+                    "opis": "",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Leskovačka mućkalica",
+                    "cena": "1.090,00 din",
+                    "opis": "",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Teletina u sosu od pečuraka sa mlincima",
+                    "cena": "1.840,00 din",
+                    "opis": "teleće meso, pečurke, mlinci, pavlaka, celer, brašno",
+                    "kolicina": "200 gr"
+                },
+                {
+                    "naziv": "Pariska šnicla",
+                    "cena": "1.090,00 din",
+                    "opis": "laks kare, brašno, jaja",
+                    "kolicina": "300 gr"
+                }
+            ]
+        },
+        "rostilj": {
+            "naziv_sekcije": "Jela sa roštilja",
+            "icon": "/images/grill.webp",
+            "images": [
+                {
+                    "src": "/images/grill.webp"
+                },
+                {
+                    "src": "/images/grill1.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Ćevapi",
+                    "cena": "990,00 din",
+                    "cena_mala_porcija": "594,00 din",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Ćevapi sa kajmakom",
+                    "cena": "1.160,00 din",
+                    "cena_mala_porcija": "696,00 din",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Pljeskavica",
+                    "cena": "1.050,00 din",
+                    "cena_mala_porcija": "630,00 din",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Pljeskavica sa kajmakom",
+                    "cena": "1.280,00 din",
+                    "cena_mala_porcija": "768,00 din",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Gurmanska pljeskavica",
+                    "cena": "1.110,00 din",
+                    "cena_mala_porcija": "666,00 din",
+                    "opis": "kačkavalj",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Svež sv. vrat",
+                    "cena": "1.190,00 din",
+                    "cena_mala_porcija": "714,00 din",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Dimljene domaće kobasice",
+                    "cena": "1.080,00 din",
+                    "cena_mala_porcija": "648,00 din",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Leskovački uštipci",
+                    "cena": "1.090,00 din",
+                    "cena_mala_porcija": "654,00 din",
+                    "opis": "kačkavalj",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Pileći file na žaru",
+                    "cena": "1.040,00 din",
+                    "cena_mala_porcija": "624,00 din",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Ćureći file na žaru",
+                    "cena": "1.190,00 din",
+                    "cena_mala_porcija": "714,00 din",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Rolovana piletina u slanini",
+                    "cena": "1.160,00 din",
+                    "cena_mala_porcija": "696,00 din",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Dimljeni batak na krompiru sa kajmakom",
+                    "cena": "1.140,00 din",
+                    "cena_mala_porcija": "684,00 din",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Ražnjići (svinjski - pileći)",
+                    "cena": "1.170,00 din",
+                    "cena_mala_porcija": "702,00 din",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Bela vešalica",
+                    "cena": "1.140,00 din",
+                    "cena_mala_porcija": "684,00 din",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Punjena bela vešalica",
+                    "cena": "1.250,00 din",
+                    "cena_mala_porcija": "750,00 din",
+                    "opis": "sv. kare, kačkavalj, pečenica",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Rolovana punjena bela vešalica",
+                    "cena": "1.380,00 din",
+                    "cena_mala_porcija": "828,00 din",
+                    "opis": "kačkavalj",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Mešano meso - za dve osobe",
+                    "cena": "1.970,00 din",
+                    "opis": "ćevap, uštipak, dom. kobasica, piletina u slanini, sv. vrat i dim. batak",
+                    "kolicina": "600 gr"
+                }
+            ]
+        },
+        "gotova_jela_pecenja": {
+            "naziv_sekcije": "Gotova jela-pečenja",
+            "icon": "/images/roast.webp",
+            "images": [
+                {
+                    "src": "/images/roast.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Teleće pečenje",
+                    "cena": "1.780,00 din",
+                    "opis": "teleće meso u saftu sa pekarskim krompirom, brašno, celer",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Teleći ribić ispod sača",
+                    "cena": "1.980,00 din",
+                    "opis": "",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Dimljene butkice u renu",
+                    "cena": "1.290,00 din",
+                    "opis": "sv. butkice, n. pavlaka, ren, varivo",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Rebra na krompiru sa kajmakom",
+                    "cena": "1.050,00 din",
+                    "opis": "",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Jagnjetina ispod sača - porcija",
+                    "cena": "1.590,00 din",
+                    "opis": "",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Jagnjeće pečenje sa ražnja",
+                    "cena": "3.400,00 din",
+                    "opis": "po narudžbini",
+                    "kolicina": "1 kg"
+                },
+                {
+                    "naziv": "Praseće pečenje sa ražnja",
+                    "cena": "2.600,00 din",
+                    "opis": "po narudžbini",
+                    "kolicina": "1 kg"
+                }
+            ]
+        },
+        "prilozi_i_variva": {
+            "naziv_sekcije": "Prilozi i variva",
+            "icon": "/images/appetizers.webp",
+            "images": [
+                {
+                    "src": "/images/appetizers.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Pomfrit",
+                    "cena": "390,00 din",
+                    "opis": "",
+                    "kolicina": "200 gr"
+                },
+                {
+                    "naziv": "Pekarski krompir",
+                    "cena": "350,00 din",
+                    "opis": "",
+                    "kolicina": "200 gr"
+                },
+                {
+                    "naziv": "Tartar sos",
+                    "cena": "190,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Mlinci",
+                    "cena": "420,00 din",
+                    "opis": "N. pavlaka, celer, brašno",
+                    "kolicina": "200 gr"
+                },
+                {
+                    "naziv": "Masline",
+                    "cena": "150,00 din",
+                    "opis": "",
+                    "kolicina": "150 gr"
+                }
+            ]
+        },
+        "plodovi_mora_ribe": {
+            "naziv_sekcije": "Ribe",
+            "icon": "/images/fish.webp",
+            "images": [
+                {
+                    "src": "/images/fish.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Frigane lignje",
+                    "cena": "1.620,00 din",
+                    "opis": "brašno",
+                    "kolicina": "280 gr"
+                },
+                {
+                    "naziv": "Lignje na žaru",
+                    "cena": "1.550,00 din",
+                    "opis": "",
+                    "kolicina": "280 gr"
+                },
+                {
+                    "naziv": "Losos na žaru",
+                    "cena": "1.850,00 din",
+                    "opis": "",
+                    "kolicina": "270 gr"
+                },
+                {
+                    "naziv": "Dimljena pastrmka",
+                    "cena": "3.600,00 din",
+                    "opis": "fileti",
+                    "kolicina": "1 kg"
+                },
+                {
+                    "naziv": "Oslić na žaru",
+                    "cena": "1.050,00 din",
+                    "opis": "brašno",
+                    "kolicina": "270 gr"
+                }
+            ]
+        },
+        "salate_kao_obrok": {
+            "naziv_sekcije": "Salate kao obrok",
+            "icon": "/images/cesar.webp",
+            "images": [
+                {
+                    "src": "/images/cesar.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Cezar salata",
+                    "cena": "960,00 din",
+                    "opis": "Iceberg, pil. file, parmezan, slanina, senf, ren",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Tuna salata",
+                    "cena": "860,00 din",
+                    "opis": "mix zelenih salata, tunjevina, bareno jaje, masline, luk, čeri paradajz",
+                    "kolicina": "350 gr"
+                }
+            ]
+        },
+        "salate": {
+            "naziv_sekcije": "Salate",
+            "icon": "/images/salad.webp",
+            "images": [
+                {
+                    "src": "/images/salad.webp"
+                }, 
+                {
+                    "src": "/images/salad1.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Dren salata",
+                    "cena": "420,00 din",
+                    "opis": "pečena paprika, ljuta pečena, sir, c. luk",
+                    "kolicina": "150 gr"
+                },
+                {
+                    "naziv": "Pečena paprika",
+                    "cena": "390,00 din",
+                    "opis": "",
+                    "kolicina": "150 gr"
+                },
+                {
+                    "naziv": "Ajvar",
+                    "cena": "490,00 din",
+                    "opis": "",
+                    "kolicina": "120 gr"
+                },
+                {
+                    "naziv": "Kiseli kupus",
+                    "cena": "320,00 din",
+                    "opis": "",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Grčka salata",
+                    "cena": "490,00 din",
+                    "opis": "sir",
+                    "kolicina": "300 gr"
+                },
+                {
+                    "naziv": "Mix zelenih salata sa čerijem",
+                    "cena": "390,00 din",
+                    "opis": "",
+                    "kolicina": "150 gr"
+                },
+                {
+                    "naziv": "Krastavac salata",
+                    "cena": "350,00 din",
+                    "opis": "",
+                    "kolicina": "200 gr"
+                },
+                {
+                    "naziv": "Bašta salata za dve osobe",
+                    "cena": "590,00 din",
+                    "opis": "",
+                    "kolicina": "350 gr"
+                },
+                {
+                    "naziv": "Vitaminska salata",
+                    "cena": "370,00 din",
+                    "opis": "celer",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Srpska salata",
+                    "cena": "380,00 din",
+                    "opis": "",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Šopska salata",
+                    "cena": "400,00 din",
+                    "opis": "sir",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Tarator salata",
+                    "cena": "360,00 din",
+                    "opis": "pavlaka",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Kupus salata - svež",
+                    "cena": "280,00 din",
+                    "opis": "",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Zelena salata",
+                    "cena": "310,00 din",
+                    "opis": "",
+                    "kolicina": "150 gr"
+                },
+                {
+                    "naziv": "Zekina salata",
+                    "cena": "290,00 din",
+                    "opis": "",
+                    "kolicina": "150 gr"
+                },
+                {
+                    "naziv": "Ljuta papričica u ulju",
+                    "cena": "110,00 din",
+                    "opis": "",
+                    "kolicina": "1 kom"
+                },
+                {
+                    "naziv": "Sveža ljuta",
+                    "cena": "110,00 din",
+                    "opis": "",
+                    "kolicina": "1 kom"
+                },
+                {
+                    "naziv": "Urnebes salata",
+                    "cena": "410,00 din",
+                    "opis": "ljuta paprika, sir",
+                    "kolicina": "150 gr"
+                },
+                {
+                    "naziv": "Paprika u pavlaci",
+                    "cena": "410,00 din",
+                    "opis": "",
+                    "kolicina": "100 gr"
+                },
+                {
+                    "naziv": "Paradajz salata",
+                    "cena": "360,00 din",
+                    "opis": "paradajz salata sa lukom, bez luka, na lubenicu",
+                    "kolicina": "250 gr"
+                },
+                {
+                    "naziv": "Paradajz salata sa sirom",
+                    "cena": "390,00 din",
+                    "opis": "paradajz salata sa sirom, lukom, bez luka, na lubenicu",
+                    "kolicina": "250 gr"
+                }
+            ]
+        },
+        "poslastice": {
+            "naziv_sekcije": "Poslastice",
+            "icon": "/images/dessert.webp",
+            "images": [
+                {
+                    "src": "/images/dessert.webp"
+                },
+                {
+                    "src": "/images/dessert1.webp"
+                }
+            ],
+            "jela": [
+                {
+                    "naziv": "Orasnice",
+                    "cena": "270,00 din",
+                    "opis": "orasi, brašno, jaja",
+                    "kolicina": "1 kom"
+                },
+                {
+                    "naziv": "Baklava",
+                    "cena": "430,00 din",
+                    "opis": "orasi, brašno",
+                    "kolicina": "1 kom"
+                },
+                {
+                    "naziv": "Cheese cake",
+                    "cena": "470,00 din",
+                    "opis": "",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Urmašice",
+                    "cena": "350,00 din",
+                    "opis": "",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Tulumba",
+                    "cena": "340,00 din",
+                    "opis": "brašno, jaja, šećer",
+                    "kolicina": "1 kom"
+                },
+                {
+                    "naziv": "Jafa kolač",
+                    "cena": "340,00 din",
+                    "opis": "jaja, brašno, šećer, čokolada",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Palačinke sa nutelom i plazmom",
+                    "cena": "430,00 din",
+                    "opis": "brašno, jaja, mleko",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Palačinke sa eurokremom i plazmom",
+                    "cena": "380,00 din",
+                    "opis": "",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Palačinke sa eurokremom",
+                    "cena": "370,00 din",
+                    "opis": "",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Palačinke sa nutelom",
+                    "cena": "390,00 din",
+                    "opis": "brašno, jaja, mleko",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Palačinke sa orasima i medom",
+                    "cena": "380,00 din",
+                    "opis": "",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Palačinke sa džemom",
+                    "cena": "370,00 din",
+                    "opis": "",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Palačinke mix",
+                    "cena": "450,00 din",
+                    "opis": "",
+                    "kolicina": ""
+                },
+                {
+                    "naziv": "Sladoled - kugla",
+                    "cena": "100,00 din",
+                    "opis": "lešnik, vanila, šumsko voće i čokolada",
+                    "kolicina": ""
+                }
+            ]
+        }
+    }
+}

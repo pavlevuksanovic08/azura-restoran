@@ -1,0 +1,40 @@
+
+.dish {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    overflow: hidden;
+    border-radius: 8px;
+    transform: scale(1.0);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+}
+
+.dish:hover {
+    transform: scale(1.03)
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dishData {
+    padding: 1rem;
+}
+
+.title {
+    font-size: clamp(1.2rem, 1.7vw, 2.5rem);
+}
+
+.desc {
+    font-family: var(--font-regular);
+    font-size: clamp(1rem, 1.5vw, 2rem);
+
+}

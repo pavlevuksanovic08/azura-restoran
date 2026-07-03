@@ -1,0 +1,137 @@
+
+.contact {
+    margin: var(--margin);
+}
+
+.contact h2 {
+    margin: 0 0 3rem;
+    text-align: center;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    letter-spacing: 0.08em;
+    
+    color: var(--color-primary);
+}
+
+.contactData {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contactData > * {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.meta {
+    flex: 1.1;
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.85rem;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.meta p {
+    margin: 1rem auto;
+    font-family: var(--font-regular);
+    line-height: 1.7;
+    font-size: 1.25rem;
+
+}
+
+.meta a {
+    align-self: center; 
+}
+
+.reservationBtn {
+    margin-top: 2rem;
+    border: none;
+    width: fit-content;
+    padding: 0.95rem 1.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--color-secondary);
+    color: var(--color-surface);
+    font-family: var(--font-semibold);
+}
+
+.reservationBtn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-surface);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(90, 62, 43, 0.24);
+}
+
+.map {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-bottom: 3rem; /* Razmak između mape i teksta ispod nje */
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.fig {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    height: fit-content;
+    margin: 0;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transform: scale(1);
+    transition: transform 0.2s ease-out;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+@media (width < 860px) {
+    .contactmap {
+        grid-template-columns: 1fr;
+    }
+
+    .meta {
+        order: 2;
+    }
+}
+
+@media (width < 676px) {
+
+    .contactData {
+        flex-direction: column;
+    }
+
+    .meta {
+        padding: 1.4rem;
+    }
+
+    .fig {
+        display: none;
+    }
+
+    .reservationBtn {
+        width: 100%;
+    }
+}

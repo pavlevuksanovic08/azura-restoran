@@ -1,0 +1,104 @@
+.section {
+    width: 100%;
+}
+
+.container {
+    width: min(900px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: clamp(1.8rem, 2.8vw, 3rem);
+    margin: 4rem auto 5rem;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.item {
+    margin-bottom: 0.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.name {
+    font-weight: 600;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.quantity {
+    color: #666;
+}
+
+.description {
+    margin: 0.35rem 0 0;
+    color: gray;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.smallPortion {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.flexDiv {
+    display: flex;
+    gap: 2rem;
+}
+
+.fig {
+    border-radius: 8px;
+    overflow: hidden;
+    height: fit-content;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    margin-bottom: 3rem;
+
+}
+
+.images {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.img {
+    width: 100%;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+@media (width < 676px) {
+    .flexDiv {
+        flex-direction: column;
+    }
+
+    .fig {
+        width: 100%;
+    }
+
+    .images {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading {
+        margin: 3rem auto 2rem;
+    }
+}
