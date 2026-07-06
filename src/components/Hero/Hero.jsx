@@ -4,11 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Hero() {
     return (
-<<<<<<< HEAD
         <div>
-=======
-        <section>
->>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
             <div className={styles.hero}>
                 <motion.div
                     initial={{ opacity: 0, y: 24 }}

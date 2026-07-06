@@ -30,11 +30,8 @@
 
 .textDiv h2 {
     font-size: clamp(2rem, 3vw, 3.5rem);
-<<<<<<< HEAD
     font-family: var(--font-bold);
 
-=======
->>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
 }
 
 .fig {

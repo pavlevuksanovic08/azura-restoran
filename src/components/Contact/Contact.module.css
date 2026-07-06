@@ -50,14 +50,11 @@
     align-self: center; 
 }
 
-<<<<<<< HEAD
 .meta button {
     padding: 1rem 1.2rem;
     font-size: clamp(1rem, 1.5vw, 1.5rem)
 }
 
-=======
->>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
 .map {
     width: 100%;
     height: 200px;

@@ -8,11 +8,7 @@
 }
 
 .heading {
-<<<<<<< HEAD
     font-size: clamp(2.5rem, 6vw, 5rem);
-=======
-    font-size: clamp(2.5rem, 4vw, 4.5rem);
->>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
     margin: 4rem auto 5rem;
     text-align: center;
     font-family: var(--font-bold);
@@ -35,19 +31,13 @@
 .name {
     font-weight: 600;
     font-size: clamp(1.5rem, 2vw, 2.5rem);
-<<<<<<< HEAD
     font-family: var(--font-bold);
-=======
->>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
 }
 
 .price {
     font-weight: 500;
     font-size: clamp(1.5rem, 2vw, 2.5rem);
-<<<<<<< HEAD
     font-family: var(--font-bold);
-=======
->>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
 
 }
 
