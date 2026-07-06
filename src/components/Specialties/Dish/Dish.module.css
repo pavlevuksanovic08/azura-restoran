@@ -2,17 +2,16 @@
 .dish {
     width: 100%;
     margin: 0 auto;
-    min-height: 100%;
+    min-height: 470px;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--color-primary);
-    color: var(--color-surface);
+    background-color: var(--color-card);
+    color: var(--color-primary);
     overflow: hidden;
     border-radius: 8px;
     transform: scale(1.0);
     transition: transform 0.2s ease-in-out;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-
 }
 
 .dish:hover {
@@ -30,11 +29,17 @@
 }
 
 .title {
-    font-size: clamp(1.2rem, 1.7vw, 2.5rem);
+    font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
 .desc {
     font-family: var(--font-regular);
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1.2rem, 1.7vw, 2.2rem);
+    color: var(--color-secondary)
+}
 
+@media (width < 676px) {
+    .dish {
+        min-height: 200px;
+    }
 }

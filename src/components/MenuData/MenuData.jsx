@@ -1,15 +1,24 @@
 import styles from "./MenuData.module.css";
+import { motion } from "framer-motion";
+import { fadeUp } from "../../animations";
 
-export default function MenuData({ section }) {
+export default function MenuData({ section, id }) {
     return (
         <section className={styles.section}>
-            <div className={styles.container}>
-                <h2 className={styles.heading}>{section.naziv_sekcije}</h2>
+            <motion.div {...fadeUp} className={styles.container}>
+                <motion.h2 {...fadeUp} transition={{ duration: 0.6, delay: 0.05 }} className={styles.heading} id={id}>{section.naziv_sekcije}</motion.h2>
 
                 <div className={styles.flexDiv}>
                     <ul className={styles.list}>
                         {section.jela.map((jelo, jeloIndex) => (
-                            <li key={jeloIndex} className={styles.item}>
+                            <motion.li
+                                key={jeloIndex}
+                                initial={{ opacity: 0, y: 16 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.2 }}
+                                transition={{ duration: 0.5, delay: jeloIndex * 0.05, ease: "easeOut" }}
+                                className={styles.item}
+                            >
                                 <strong className={styles.name}>{jelo.naziv}</strong>
                                 <span className={styles.price}> - {jelo.cena}</span>
 
@@ -20,30 +29,31 @@ export default function MenuData({ section }) {
                                 )}
 
                                 {jelo.opis && (
-                                    <p className={styles.description}>
-                                        {jelo.opis}
-                                    </p>
+                                    <p className={styles.description}>{jelo.opis}</p>
                                 )}
 
                                 {jelo.cena_mala_porcija && (
-                                    <span className={styles.smallPortion}>
-                                        Mala porcija: {jelo.cena_mala_porcija}
-                                    </span>
+                                    <span className={styles.smallPortion}>Mala porcija: {jelo.cena_mala_porcija}</span>
                                 )}
-                            </li>
+                            </motion.li>
                         ))}
                     </ul>
                     <div className={styles.images}>
                         {section.images.map((img, i) => (
-                            <figure className={styles.fig} key={i}>
-                                <img src={img.src} className={styles.img} />
-                            </figure>
+                            <motion.figure
+                                key={i}
+                                initial={{ opacity: 0, scale: 0.96 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true, amount: 0.2 }}
+                                transition={{ duration: 0.55, delay: i * 0.05, ease: "easeOut" }}
+                                className={styles.fig}
+                            >
+                                <img src={img.src} className={styles.img} alt="" />
+                            </motion.figure>
                         ))}
                     </div>
-                    
                 </div>
-                
-            </div>
+            </motion.div>
         </section>
     );
 }

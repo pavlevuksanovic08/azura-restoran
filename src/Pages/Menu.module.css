@@ -8,7 +8,7 @@
     color: var(--color-primary);
     margin: 0 0 3rem;
     text-align: center;
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(3.5rem, 6vw, 8rem);
     letter-spacing: 0.08em;
     
 }
@@ -44,8 +44,9 @@
     text-align: center;
     line-height: 1.6;
 
-    color: var(--color-surface);
-    font-size: clamp(1rem, 1.8vw, 2rem)
+    color: #FFF;
+    font-size: clamp(1.3rem, 2.3vw, 2.5rem);
+    font-family: var(--font-bold);
 }
 
 .sections :global(.slick-slider) {
@@ -74,6 +75,10 @@
 @media (width < 676px) {
     .cardImage {
         height: 90px;
+    }
+
+    .cardImage p {
+        line-height: normal;
     }
 
     .main {

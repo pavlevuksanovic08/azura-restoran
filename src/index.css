@@ -1,39 +1,42 @@
 @font-face {
-    font-family: "Cinzel Semibold";
-    src: url("./assets/fonts/Cinzel-SemiBold.ttf") format("truetype");
+    font-family: "Cormorant Semibold";
+    src: url("./assets/fonts/CormorantGaramond-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Cinzel Bold';
-    src: url("./assets/fonts/Cinzel-ExtraBold.ttf");
+    font-family: 'Cormorant Bold';
+    src: url("./assets/fonts/CormorantGaramond-Bold.ttf");
 }
 
 @font-face {
-    font-family: 'Cinzel';
-    src: url('./assets/fonts/Cinzel-Regular.ttf')
+    font-family: 'Cormorant';
+    src: url('./assets/fonts/CormorantGaramond-Regular.ttf')
 }
 
 :root {
 
     --margin: 5% 2rem;
 
-    --font-regular: "Cinzel";
-    --font-semibold: "Cinzel Semibold", serif;
-    --font-bold: "Cinzel Bold";
+    --font-regular: "Cormorant";
+    --font-semibold: "Cormorant Semibold", serif;
+    --font-bold: "Cormorant Bold";
     --font-semi-bold: var(--font-semibold);
 
-    --color-primary: #2B1E1A;
-    --color-secondary: #C89B3C;
-    --color-surface: #FAF4EC;
-    --color-accent: #5A3E2B;
+    --color-background: #F8F5F2;
+    --color-card: #FFFFFF;
+    --color-primary: #222222;
+    --color-secondary: #666666;
+    --color-hover: #96693A;
+    --color-accent: #B7864E;
 }
 
 html, body, #root {
     padding: 0;
     margin: 0;
     font-family: var(--font-semibold);
+    background-color: #F8F5F2;
 }
 
 a {
@@ -42,8 +45,29 @@ a {
     cursor: pointer;
 }
 
+button {
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 1rem 1.2rem;
+    font-family: var(--font-semi-bold);
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-out;
+}
+
+button:hover {
+    background-color: var(--color-hover);
+    transform: scale(1.02) translateY(-1%);
+}
+
 @media (width < 676px) {
     :root {
         --margin: 5rem 1rem;
+    }
+
+    button {
+        padding: 0.8rem 1rem;
     }
 }

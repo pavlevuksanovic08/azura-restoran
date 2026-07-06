@@ -22,16 +22,21 @@
     height: 4rem;
     position: absolute;
     border-radius: 64px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateY(-50%) scale(1.0);
     transition: transform 0.2s ease-out;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .arrowDiv:hover {
     transform: translateY(-50%) scale(1.06);
+}
+
+.arrow {
+    filter: brightness(0);
 }
 
 .leftArrow {
@@ -47,21 +52,11 @@
 }
 
 .menuLink {
-    color: var(--color-secondary);
     display: block;
     margin: 2rem auto;
     width: fit-content;
-    text-align: center;
     font-size: 1.5rem;
-    text-decoration: underline;
     cursor: pointer;
-    transform: scale(1);
-    transition: tranform 0.2s ease-out
-}
-
-.menuLink:hover {
-    color: var(--color-primary);
-    transform: scale(1.01)
 }
 
 .dishes :global(.slick-slider) {
@@ -85,4 +80,10 @@
 .dishes :global(.slick-slide) > div {
     height: 100%;
     padding: 0 1rem;
+}
+
+@media (width < 676px) {
+    .arrowDiv {
+        display: none;
+    }
 }

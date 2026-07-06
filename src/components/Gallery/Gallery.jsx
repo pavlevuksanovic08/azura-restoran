@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styles from "./Gallery.module.css"
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 export default function Gallery({ images }) {
     const [orientations, setOrientations] = useState({})
@@ -30,18 +31,27 @@ export default function Gallery({ images }) {
                         const orientationClass = orientations[index] || "square"
 
                         return (
-                            <figure key={index} className={`${styles.fig} ${styles[orientationClass]}`}>
+                            <motion.figure
+                                key={index}
+                                initial={{ opacity: 0, y: 24, scale: 0.96 }}
+                                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                                viewport={{ once: true, amount: 0.2 }}
+                                transition={{ duration: 0.6, delay: index * 0.05, ease: "easeOut" }}
+                                className={`${styles.fig} ${styles[orientationClass]}`}
+                            >
                                 <img
                                     src={img.src}
                                     className={styles.img}
                                     alt={img.alt || `Galerija ${index + 1}`}
                                     onLoad={(event) => handleImageLoad(index, event)}
                                 />
-                            </figure>
+                            </motion.figure>
                         )
                     })}
                 </div>
-                <Link to="/gallery" className={styles.galleryLink}>Pogledaj galeriju</Link>
+                <Link to="/gallery" className={styles.galleryLink}>
+                    <button>Pogledaj Galeriju</button>    
+                </Link>
             </div>
         </section>
     )
