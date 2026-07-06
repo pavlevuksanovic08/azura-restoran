@@ -5,6 +5,8 @@ import rightArrow from "../../assets/icons/right-arrow.png"
 import rawSlider from "react-slick"
 import { useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
+import { fadeUp } from "../../animations"
 
 const Slider = rawSlider?.default?.default || rawSlider?.default || rawSlider
 
@@ -46,25 +48,30 @@ export default function Specialties({ dishes }) {
 
     return (
         <section className={styles.section}>
-            <div className={styles.specialties}>
-                <div className={styles.headingWrap}>
+            <motion.div
+                {...fadeUp}
+                className={styles.specialties}
+            >
+                <motion.div {...fadeUp} transition={{ duration: 0.6, delay: 0.05 }} className={styles.headingWrap}>
                     <h2>Specijaliteti</h2>
-                </div>
-                <div className={styles.dishes}>
+                </motion.div>
+                <motion.div {...fadeUp} transition={{ duration: 0.7, delay: 0.12 }} className={styles.dishes}>
                     <Slider {...settings} ref={sliderRef}>
                         {dishes.map((dish, index) => (
                             <Dish dish={dish} key={index} />
                         ))}
                     </Slider>
-                    <Link to="/menu" className={styles.menuLink}>Pogledaj Meni</Link>
+                    <Link to="/menu" className={styles.menuLink}>
+                        <button>Pogledaj Meni</button>
+                    </Link>
                     <div className={styles.leftArrow} onClick={handleLeftClick}>
                         <img src={leftArrow} className={styles.arrow} alt="Prethodni specijalitet" />
                     </div>
                     <div className={styles.rightArrow} onClick={handleRightClick}>
                         <img src={rightArrow} className={styles.arrow} alt="Sledeći specijalitet" />
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     )
 } 

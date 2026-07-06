@@ -2,13 +2,14 @@
 .footer {
     margin: 0;
     height: 15vh;
-    background-color: var(--color-primary);
-    color: var(--color-surface);
+    background-color: var(--color-background);
+    color: var(--color-accent);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     box-sizing: border-box;
+    box-shadow: -10px 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -22,7 +23,7 @@
 }
 
 .copy {
-    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .follow {
@@ -30,6 +31,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+
 }
 
 @media (width < 750px) {

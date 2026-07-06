@@ -3,7 +3,8 @@
     width: 100%;
     transition: transform 0.3s ease;
     z-index: 1000;
-    background-color: var(--color-primary);
+    background-color: var(--color-background);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .fixed {
@@ -13,7 +14,7 @@
 }
 
 .spacer {
-    height: 15vh;
+    height: 20vh;
     width: 100%;
 }
 
@@ -26,18 +27,35 @@
 }
 
 .headerDiv {
-    height:15vh;
+    height:20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2.5rem;
+    padding: 0.5rem 3rem;
     box-sizing: border-box;
     color: var(--color-surface);
 }
 
 .logo {
     height: 100%;
+    display: flex;
+    align-items: center;
 }
+
+.logo svg {
+    height: 3.2rem;
+}
+
+.logo .stroke {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+    animation: draw 1.2s ease-out forwards;
+}
+
+@keyframes draw {
+    to { stroke-dashoffset: 0; }
+}
+
 
 .nav {
     display: flex;
@@ -45,12 +63,14 @@
 }
 
 .navItem {
-    font-size: clamp(0.75rem, 2vw, 1.5rem);
+    font-size: clamp(2rem, 2.5vw, 3rem);
     cursor: pointer;
+    color: var(--color-accent)
 }
 
+
 .navItem:hover {
-    color: var(--color-secondary)
+    color: var(--color-hover)
 }
 
 .overlay {
@@ -79,7 +99,7 @@
     right: 0;
     height: 100vh;
     width: 220px;
-    background-color: var(--color-secondary);
+    background-color: white;
     transform: translateX(100%);
     transition: all 0.3s ease-out;
     padding: 2rem;
@@ -88,6 +108,10 @@
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.menu img {
+    padding: 0 2rem;
 }
 
 .open {
@@ -104,19 +128,18 @@
 .links a {
     display: block;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: fit-content;
-    color: var(--color-surface)
+    color: var(--color-accent)
 }
 
 .links a:hover {
-    
-    color: var(--color-primary)
+    color: var(--color-hover)
 }
 
 @media (width < 676px) {
     .headerDiv {
-        height: 10vh;
+        height: 15vh;
         padding: 0.5rem 1.5rem;
     }
 
@@ -127,4 +150,9 @@
     .spacer {
         height: 10vh;
     }
+
+    .menuBtn {
+        width: 1.5rem;
+    }
+
 }

@@ -1,15 +1,18 @@
 
 .main {
     overflow: hidden;
-    margin: var(--margin)
+    margin: var(--margin);
+    padding-top: 10vh;
 }
 
 .header {
     color: var(--color-primary);
-    margin: 0 0 3rem;
+    margin-bottom: 0 0 3rem;
     text-align: center;
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(3.5rem, 7vw, 6rem);
     letter-spacing: 0.08em;
+    font-family: var(--font-bold);
+
     
 }
 
@@ -19,7 +22,7 @@
     height: 100%;
     height: 120px;
 
-    border-radius: 8px;
+    border-radius: 22px;
 
     padding: 1.5rem;
     box-sizing: border-box;
@@ -44,8 +47,9 @@
     text-align: center;
     line-height: 1.6;
 
-    color: var(--color-surface);
-    font-size: clamp(1rem, 1.8vw, 2rem)
+    color: #FFF;
+    font-size: clamp(1.3rem, 2.3vw, 2.5rem);
+    font-family: var(--font-bold);
 }
 
 .sections :global(.slick-slider) {
@@ -74,6 +78,10 @@
 @media (width < 676px) {
     .cardImage {
         height: 90px;
+    }
+
+    .cardImage p {
+        line-height: normal;
     }
 
     .main {

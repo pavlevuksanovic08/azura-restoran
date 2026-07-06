@@ -8,9 +8,11 @@
 }
 
 .heading {
-    font-size: clamp(1.8rem, 2.8vw, 3rem);
+    font-size: clamp(2.5rem, 6vw, 5rem);
     margin: 4rem auto 5rem;
     text-align: center;
+    font-family: var(--font-bold);
+
 }
 
 .list {
@@ -28,14 +30,21 @@
 
 .name {
     font-weight: 600;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-family: var(--font-bold);
 }
 
 .price {
     font-weight: 500;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-family: var(--font-bold);
+
 }
 
 .quantity {
     color: #666;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+
 }
 
 .description {
@@ -43,6 +52,8 @@
     color: gray;
     font-size: 0.9rem;
     line-height: 1.5;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+
 }
 
 .smallPortion {
@@ -58,7 +69,7 @@
 }
 
 .fig {
-    border-radius: 8px;
+    border-radius: 22px;
     overflow: hidden;
     height: fit-content;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);

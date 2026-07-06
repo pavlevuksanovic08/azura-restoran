@@ -37,9 +37,9 @@ export default function Header({ transparent }) {
         function handleScroll() {
             let currentScroll = window.scrollY;
 
-            if (currentScroll < 20) setIsTransparent(true);
+            if (currentScroll < 50) setIsTransparent(true);
 
-            if (currentScroll >= 20) setIsTransparent(false);
+            if (currentScroll >= 0) setIsTransparent(false);
 
             if (currentScroll > lastScroll && currentScroll > 50) setShow(false);
 
@@ -96,7 +96,7 @@ export default function Header({ transparent }) {
                             </ul>
                         </nav>
                     : 
-                        <img src={menu} onClick={() => setDisplayMenu(true)} />
+                        <img src={menu} className={styles.menuBtn} onClick={() => setDisplayMenu(true)} />
                     }
 
                     
@@ -110,9 +110,9 @@ export default function Header({ transparent }) {
 
             <aside className={`${styles.menu} ${displayMenu ? styles.open : ""}`}>
                 <nav className={styles.links}>
-                    <Link to="/" onClick={() => setDisplayMenu(false)}>Home</Link>
-                    <Link to="/menu" onClick={() => setDisplayMenu(false)}>Menu</Link>
-                    <Link to="/gallery" onClick={() => setDisplayMenu(false)}>Gallery</Link>
+                    <Link to="/" onClick={() => setDisplayMenu(false)}>Početna</Link>
+                    <Link to="/menu" onClick={() => setDisplayMenu(false)}>Meni</Link>
+                    <Link to="/gallery" onClick={() => setDisplayMenu(false)}>Galerija</Link>
                                     </nav>
                 <img src={logo} />
             </aside>

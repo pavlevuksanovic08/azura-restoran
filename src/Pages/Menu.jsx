@@ -4,6 +4,7 @@ import styles from "./Menu.module.css"
 import MenuData from "../components/MenuData/MenuData";
 import { useMenu } from "../context/MenuContext";
 import ScrollToTop from "../ScrollToTop";
+import { motion } from "framer-motion";
 
 
 const Slider = rawSlider?.default?.default || rawSlider?.default || rawSlider
@@ -14,6 +15,10 @@ export default function Menu() {
     const { menu, loading } = useMenu()
     const [sectionIndex, setSectionIndex] = useState(0);
     const [slidesToShow, setSlidesToShow] = useState(5);
+
+    useEffect(() => {
+
+    }, [sectionIndex])
 
     useEffect(() => {
         function updateSlides() {
@@ -51,17 +56,30 @@ export default function Menu() {
         <>
             <ScrollToTop />
             <main>
-                <div className={styles.main}>
+                <motion.div
+                    initial={{ opacity: 0, y: 24 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.75, ease: "easeOut" }}
+                    className={styles.main}
+                >
                     <h1 className={styles.header}>Meni</h1>
                     <div className={styles.sections}>
                         <Slider {...settings}>
                             {menu.map((section, index) => (
                                 <div key={index}>   
                                     <div 
-                                        onClick={() => setSectionIndex(index)}
+                                        onClick={() => {
+                                            setSectionIndex(index);
+
+                                            setTimeout(() => {
+                                                document
+                                                    .getElementById("menu-data")
+                                                    ?.scrollIntoView({ behavior: "smooth" });
+                                            }, 0);
+                                        }}
                                         className={styles.cardImage}
                                         style={{
-                                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${section.icon?.startsWith('/') ? section.icon : '/' + section.icon})`                                    
+                                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${section.icon?.startsWith('/') ? section.icon : '/' + section.icon})`                                    
                                         }}
                                         
                                     >
@@ -72,9 +90,9 @@ export default function Menu() {
                             ))}
                         </Slider>
                     </div>
-                    <MenuData section={menu[sectionIndex]} />
+                    <MenuData section={menu[sectionIndex]} id={"menu-data"} />
                     
-                </div>
+                </motion.div>
             </main>
         </>
     );
