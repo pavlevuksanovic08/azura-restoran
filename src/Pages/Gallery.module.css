@@ -70,3 +70,9 @@
     color: var(--color-primary);
     transform: scale(1.01)
 }
+
+@media (width < 676px) {
+    .main {
+        padding-top: 5vh;
+    }
+}
