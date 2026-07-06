@@ -9,7 +9,11 @@
     color: var(--color-primary);
     margin-bottom: 0 0 3rem;
     text-align: center;
+<<<<<<< HEAD
     font-size: clamp(3.5rem, 7vw, 6rem);
+=======
+    font-size: clamp(3.5rem, 6vw, 8rem);
+>>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
     letter-spacing: 0.08em;
     font-family: var(--font-bold);
 

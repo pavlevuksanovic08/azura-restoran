@@ -134,7 +134,8 @@
 }
 
 .links a:hover {
-    color: var(--color-hover)
+    
+    color: var(--color-primary)
 }
 
 @media (width < 676px) {

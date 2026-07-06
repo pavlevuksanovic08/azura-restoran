@@ -7,11 +7,16 @@
     background-position: center;
     padding-top: 15vh;
 
+<<<<<<< HEAD
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url('../../assets/images/hero-image.webp');
+=======
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('../../assets/images/hero-image.webp');
+>>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
 
     display: flex;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     gap: 24px;
     
 
@@ -19,6 +24,9 @@
         max-width: 700px;
     }
     
+=======
+    position: relative;
+>>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
 }
 
 .heroHeading {
@@ -38,6 +46,7 @@
 }
 
 .heading {
+<<<<<<< HEAD
     font-size: clamp(3.5rem, 7vw, 5rem);
     line-height: 1.05;
     font-weight: 700;
@@ -51,6 +60,14 @@
     text-align: center;
     opacity: 0.9;
     align-self: center;
+=======
+    font-size: clamp(2.4rem, 4vw, 5rem);
+}
+
+.subheading {
+    font-size: clamp(1.1rem, 2.5vw, 4rem);
+
+>>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
 }
 
 .cta {
@@ -103,7 +120,10 @@
 @media (width < 676px) {
     .hero {
         justify-content: space-around;
+<<<<<<< HEAD
         padding-top: 3vh;
+=======
+>>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
     }
 
     .heroHeading {

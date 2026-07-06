@@ -8,7 +8,11 @@ export default function Contact() {
     return (
         <section id="contact">
             <motion.div {...fadeUp} className={styles.contact}>
+<<<<<<< HEAD
                 <motion.h2 {...fadeUp} transition={{ duration: 0.6, delay: 0.05 }}>Lokacija i Kontakt</motion.h2>
+=======
+                <motion.h2 {...fadeUp} transition={{ duration: 0.6, delay: 0.05 }}>Find Us & Contact</motion.h2>
+>>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
 
                 <div className={styles.contactData}>
                     <motion.figure {...slideLeft} transition={{ duration: 0.65, delay: 0.1 }} className={styles.fig}>

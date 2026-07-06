@@ -48,11 +48,19 @@ a {
 button {
     background-color: var(--color-accent);
     color: white;
+<<<<<<< HEAD
     border-radius: 999px;
     border: none;
     padding: 1.5rem 2rem;
     font-family: var(--font-semi-bold);
     font-size: clamp(1.5rem, 2vw, 2.5rem);
+=======
+    border-radius: 8px;
+    border: none;
+    padding: 1rem 1.2rem;
+    font-family: var(--font-semi-bold);
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+>>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease-out;
 }
@@ -62,21 +70,28 @@ button:hover {
     transform: scale(1.02) translateY(-1%);
 }
 
+<<<<<<< HEAD
 section {
     padding-block: 100px;
     max-width: 1280px;
 }
 
+=======
+>>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
 @media (width < 676px) {
     :root {
         --margin: 5rem 1rem;
     }
 
     button {
+<<<<<<< HEAD
         padding: 1.5rem;
     }
 
     section {
         padding-block: 52px;
+=======
+        padding: 0.8rem 1rem;
+>>>>>>> 8ffa6250f113ad4745980262a28dadfae2776844
     }
 }
