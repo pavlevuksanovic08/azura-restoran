@@ -5,8 +5,8 @@ import { fadeUp } from "../../animations";
 export default function MenuData({ section, id }) {
     return (
         <section className={styles.section}>
-            <motion.div {...fadeUp} className={styles.container}>
-                <motion.h2 {...fadeUp} transition={{ duration: 0.6, delay: 0.05 }} className={styles.heading} id={id}>{section.naziv_sekcije}</motion.h2>
+            <motion.div  className={styles.container}>
+                <motion.h2  className={styles.heading} id={id}>{section.naziv_sekcije}</motion.h2>
 
                 <div className={styles.flexDiv}>
                     <ul className={styles.list}>
