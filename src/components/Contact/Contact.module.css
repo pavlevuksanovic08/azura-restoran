@@ -6,7 +6,7 @@
 .contact h2 {
     margin-bottom: 3rem;
     text-align: center;
-    font-size: clamp(4rem, 7vw, 8rem);
+    font-size: clamp(2.5rem, 7vw, 8rem);
     line-height: 1.1;
     letter-spacing: 0.08em;
     font-family: var(--font-bold);

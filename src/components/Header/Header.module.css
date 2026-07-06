@@ -110,9 +110,6 @@
     box-sizing: border-box;
 }
 
-.menu img {
-    padding: 0 2rem;
-}
 
 .open {
     transform: translateX(0);
