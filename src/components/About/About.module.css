@@ -1,8 +1,13 @@
 .about {
     display: flex;
+    align-items: center;
     position: relative;
-    height: fit-content;
-    overflow-x: hidden;
+    overflow: visible;
+    box-sizing: border-box;
+    
+    padding-top: 10%;
+    padding-bottom: 10%;
+
 }
 
 .textDiv {
@@ -28,11 +33,13 @@
 .textDiv h2 {
     font-size: clamp(2rem, 3vw, 3.5rem);
     font-family: var(--font-bold);
-
+    
 }
 
 .fig {
     flex: 1;
+    min-width: 0;
+
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -54,9 +61,10 @@
 
 .img {
     width: 100%;
+    height: auto;
     display: block;
-    transform: scale(1.0);
-    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    transition: transform 0.2s ease-out;
 }
 
 .img:hover {
@@ -70,6 +78,7 @@
         padding-top: 5%;
         padding-bottom: 5%;
         margin: var(--margin);
+        overflow-x: hidden;
     }
 
     .textDiv {
@@ -83,7 +92,8 @@
     .left, .right {
         align-self: center;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 1rem;
+        overflow: hidden;
         width: 100%;
     }
 
