@@ -1,8 +1,6 @@
 
 .wrapper {
-    width: min(1120px, calc(100% - 2rem));
     margin: var(--margin);
-    margin-inline: auto;
 }
 
 .wrapper h2 {

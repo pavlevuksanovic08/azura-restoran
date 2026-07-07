@@ -29,6 +29,7 @@
 
 .contactData > * {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    margin-bottom: 2rem;
 }
 
 .meta {
